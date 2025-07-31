@@ -14,7 +14,8 @@
     "url": "https://github.com/sunliangqin/VSCodeQuickDim.git"
   },
   "activationEvents": [
-    "onCommand:quickDim.dim"
+    "onCommand:quickDim.dim",
+    "onCommand:quickDim.undim"
   ],
   "publisher": "Liangqin",
   "main": "./out/extension.js",
@@ -24,6 +25,10 @@
       {
         "command": "quickDim.dim",
         "title": "Dim Selected Ranges"
+      },
+      {
+        "command": "quickDim.undim",
+        "title": "Undim Selected Ranges"
       }
     ],
     "configuration": [
