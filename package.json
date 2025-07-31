@@ -2,7 +2,7 @@
   "name": "quick-dim",
   "displayName": "Quick Dim",
   "description": "Enables you to dim your source code to mark it as read.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "engines": {
     "vscode": "^1.54.0"
@@ -15,7 +15,9 @@
   },
   "activationEvents": [
     "onCommand:quickDim.dim",
-    "onCommand:quickDim.undim"
+    "onCommand:quickDim.undim",
+    "onCommand:quickDim.undimEntireFile",
+    "onCommand:quickDim.dimEntireFile"
   ],
   "publisher": "Liangqin",
   "main": "./out/extension.js",
@@ -24,11 +26,19 @@
     "commands": [
       {
         "command": "quickDim.dim",
-        "title": "Dim Selected Ranges"
+        "title": "Quick Dim: Dim Selected Ranges"
       },
       {
         "command": "quickDim.undim",
-        "title": "Undim Selected Ranges"
+        "title": "Quick Dim: Undim Selected Ranges"
+      },
+      {
+        "command": "quickDim.undimEntireFile",
+        "title": "Quick Dim: Undim Entire File"
+      },
+      {
+        "command": "quickDim.dimEntireFile",
+        "title": "Quick Dim: Dim Entire File"
       }
     ],
     "configuration": [
